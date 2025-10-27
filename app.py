@@ -14,7 +14,7 @@ user_input = st.text_area("輸入座標資料", height=150)
 generate_btn = st.button("生成標示圖")
 
 # === 基本設定 ===
-bg_path = Path(__file__).parent / "assets" / "backkground.jpg"
+bg_path = Path(__file__).parent / "assets" / "background.jpg"
 x0_px, y0_px = 40, 735
 x_max_px, y_max_px = 678, 735
 y_top_px = 16
