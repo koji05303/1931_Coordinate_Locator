@@ -63,8 +63,7 @@ if generate_btn:
         # 轉成 bytes 並顯示
         buf = io.BytesIO()
         img.save(buf, format="PNG")
-        st.image(buf.getvalue(), caption="標示結果", use_container_width=True)
-
+        st.image(buf.getvalue(), caption="標示結果", use_column_width=True)
         st.download_button(
             label="⬇️ 下載標示後圖片",
             data=buf.getvalue(),
