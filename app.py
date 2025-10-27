@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import io
+from pathlib import Path
 
 st.set_page_config(page_title="CIE 1931 色度圖標示工具", layout="centered")
 
@@ -13,7 +14,7 @@ user_input = st.text_area("輸入座標資料", height=150)
 generate_btn = st.button("生成標示圖")
 
 # === 基本設定 ===
-bg_path = "assets/background.jpg"  # 放在同資料夾即可
+bg_path = Path(__file__).parent / "assets" / "backkground.jpg"
 x0_px, y0_px = 40, 735
 x_max_px, y_max_px = 678, 735
 y_top_px = 16
