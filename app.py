@@ -37,7 +37,7 @@ if generate_btn:
             st.success("🎉 嘻嘻，你發現彩蛋了！")
             st.image(str(easter_path), caption="🐯 我愛你 小寶包！", use_column_width=True)
         else:
-            st.warning("😿 找不到彩蛋圖片：assets/IMG_0697.jpg")
+            st.warning("😿 找不到彩蛋圖片：assets/IMG_0697.JPG")
         st.stop()  # 結束執行，不繼續下面的標點程式
 
     # === 正常繪圖模式 ===
