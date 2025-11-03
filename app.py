@@ -32,7 +32,7 @@ def xy_to_px(x, y):
 if generate_btn:
     # 🥚 彩蛋功能：如果輸入剛好是 "1028"
     if user_input.strip() == "1028":
-        easter_path = Path(__file__).parent / "assets" / "IMG_0697.jpg"
+        easter_path = Path(__file__).parent / "assets" / "enaandwade.jpg"
         if easter_path.exists():
             st.success("🎉 嘻嘻，你發現彩蛋了！")
             st.image(str(easter_path), caption="🐯 我愛你 小寶包！", use_column_width=True)
