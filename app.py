@@ -30,6 +30,17 @@ def xy_to_px(x, y):
 
 # === 處理邏輯 ===
 if generate_btn:
+    # 🥚 彩蛋功能：如果輸入剛好是 "1028"
+    if user_input.strip() == "1028":
+        easter_path = Path(__file__).parent / "assets" / "IMG_0697.jpg"
+        if easter_path.exists():
+            st.success("🎉 嘻嘻，你發現彩蛋了！")
+            st.image(str(easter_path), caption="🐯 我愛你 小寶包！", use_column_width=True)
+        else:
+            st.warning("😿 找不到彩蛋圖片：assets/IMG_0697.jpg")
+        st.stop()  # 結束執行，不繼續下面的標點程式
+
+    # === 正常繪圖模式 ===
     if not user_input.strip():
         st.warning("請先輸入座標！")
     else:
